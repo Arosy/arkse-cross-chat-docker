@@ -20,9 +20,7 @@ sudo apt-get update; sudo apt-get install docker.io -yq
 ##### `docker run`
 
 ```bash
-$ docker run -d --rm --name="backup_monitor" \
-                     -v "/some/path/to/my-dir:/var/app/Config" \
-                     -e NAME="my-backup" inquinator/arkse-cross-chat:latest
+$ docker run -d --rm -v "/some/path/to/my-dir:/var/app/Config" inquinator/arkse-cross-chat:latest
 ```
 
 ### Links
