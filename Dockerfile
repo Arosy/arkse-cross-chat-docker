@@ -1,7 +1,11 @@
 # syntax=docker/dockerfile:1
-FROM mcr.microsoft.com/dotnet/runtime:6.0.7-jammy
+#FROM mcr.microsoft.com/dotnet/runtime:6.0.7-jammy
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 ARG TARGETPLATFORM
-    
+
+RUN apt-get update
+RUN apt-get install libssl-dev -yq
+
 # copy the actual binaries ..
 RUN mkdir /var/app
 COPY ./builds/$TARGETPLATFORM/ /var/app/

@@ -1,4 +1,4 @@
-# devnet-backup-monitor
+# arkse-cross-chat-docker
 
 ### Description
 
@@ -40,6 +40,12 @@ $ docker run -d --rm -v "/some/path/to/my-dir:/var/app/Config" inquinator/arkse-
 - Feel free to submit any changes you see fit or do whatever you want, because its MIT licensed.
 
 ### Changelog
+
+**v0.0.3**
+- now the app is loading correctly, had to resolve some issues around the proper .net runtime.
+
+**v0.0.2**
+- fixed an issue with the base image being incorrect.
 
 **v0.0.1**
 - built the docker scripts to containerize the application made by `spikeydragoon`.
